@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row top-buffer">
+        <div class="col-md-12">
+            <!-- content -->
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            <a routerLink="/users" routerLinkActive="active">Users</a>
+            <a routerLink="/groups" routerLinkActive="active">Groups</a>
+            <a [routerLink]="[ '/users/777' ]" [queryParams]="{ foo: 'bar' }">user777</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- content -->
+            <hr />
+            <h3>Home</h3>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+<div class="container-fluid">
+    <div class="row top-buffer">
+        <div class="col-md-12">
+            <!-- content -->
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            <a routerLink="/users" routerLinkActive="active">Users</a>
+            <a routerLink="/groups" routerLinkActive="active">Groups</a>
+            <a [routerLink]="[ '/users/777' ]" [queryParams]="{ foo: 'bar' }">user777</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>Button</h3>
+            <button class="btn btn-sm btn-default">hello</button>
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>ngIf</h3>
+            <p *ngIf="myBool">myBool is: {{myBool}}</p>
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>variables</h3>
+            <p>foo: {{foo}}</p>
+            <p>bar: {{bar}}</p>
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>ngFor (number array)</h3>
+            <ul>
+              <li *ngFor="let num of myCollection">{{num}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>ngFor (string array)</h3>
+            <ul>
+              <li *ngFor="let car of myServiceResult">{{car}}</li>
+            </ul>
+
+            <h3>Data returned from a function in a service</h3>
+            <p>myServiceResult2: {{myServiceResult2}}</p>
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>ngFor (object array)</h3>
+            <div>
+              <p *ngFor="let user of users">
+                {{user.name}}
+                <{{user.email}}>
+              </p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>buttons</h3>
+            <button (click)="doSomething()" class="btn btn-sm btn-default">doSomething</button>
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>Property binding</h3>
+            <p>myProperty: {{myProperty}}</p>
+            <input [value]="myProperty">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- content -->
+            <hr />
+            <h3>Forms (two-way-data-binding)</h3>
+            <p>myFormInput: {{myFormInput}}</p>
+            <input [(ngModel)]="myFormInput">
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+        </div>
+
+        <div class="col-md-3">
+            <!-- content -->
+        </div>
+    </div>
+
+    <div class="row bottom-buffer">
+        <div class="col-md-12">
+            <!-- content -->
+        </div>
+    </div>
+</div>

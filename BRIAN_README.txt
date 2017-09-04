@@ -76,6 +76,16 @@ git push heroku master
 heroku open
 heroku logs --tail
 
+
+
+
+
+
+
+
+
+
+
 #========= debug:
 
 heroku run bash
@@ -95,7 +105,7 @@ git remote # list remotes
 git remote remove origin
 
 
- push existing app to heroku
+push existing app to heroku  # ???
 heroku git:remote -a my-app-name # my-app-name.herokuapp.com
 
 
@@ -107,17 +117,15 @@ heroku git:remote -a my-app-name # my-app-name.herokuapp.com
 
 
 
-#==================
+#================== add code to github:
 
-
-- how to create an app from an existing project?
 - have 2 remotes: one for heroku, another for your git repo
     -> create repo in github!
     -> Go to command line
     -> heroku login
-    -> git remote add origin git@github.com:brianspinos777/xyz.git
+    -> git remote add origin git@github.com:brianspinos777/angular4test.git
     -> git push -u origin master
 
 
-
+- how to create an app from an existing project?
 
