@@ -41,13 +41,16 @@ app.listen(app.get('port'), function() {
 - package.json
 
 ``````````````
-"engines": {
-    "node": "8.0.0"
-},
-"main": "app.js",
 "scripts": {
     "start": "node app.js"
 },
+
+
+"engines": {
+    "node": "8.0.0"
+},
+"main": "app.js"
+
 ````````````
 
 
@@ -68,7 +71,7 @@ web: node app.js
 #======= workflow
 
 git add .
-gcm 'fFirst commit'
+gcm 'First commit'
 git push heroku master
 heroku open
 heroku logs --tail
